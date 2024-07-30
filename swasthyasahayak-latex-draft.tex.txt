@@ -1,0 +1,147 @@
+\documentclass[conference]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+\begin{document}
+
+\title{SwasthyaSahayak: Democratizing Access to Credible Health Information in India Using AI and WhatsApp}
+
+\author{\IEEEauthorblockN{1\textsuperscript{st} Given Name Surname}
+\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+\textit{name of organization (of Aff.)}\\
+City, Country \\
+email address or ORCID}
+\and
+\IEEEauthorblockN{2\textsuperscript{nd} Given Name Surname}
+\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+\textit{name of organization (of Aff.)}\\
+City, Country \\
+email address or ORCID}
+\and
+\IEEEauthorblockN{3\textsuperscript{rd} Given Name Surname}
+\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+\textit{name of organization (of Aff.)}\\
+City, Country \\
+email address or ORCID}
+}
+
+\maketitle
+
+\begin{abstract}
+SwasthyaSahayak addresses the critical challenge of unreliable health information in Low and Middle-Income Countries (LMICs), particularly India. By combining a curated dataset, advanced natural language processing, and WhatsApp integration, this system provides accessible, accurate, and contextually relevant health information. The project focuses on post-operative care, leveraging partnerships with leading Indian healthcare institutions to ensure credibility. SwasthyaSahayak aims to significantly improve public health outcomes by democratizing access to trustworthy medical advice at a national scale.
+\end{abstract}
+
+\begin{IEEEkeywords}
+health information, artificial intelligence, WhatsApp, India, low and middle-income countries, post-operative care
+\end{IEEEkeywords}
+
+\section{Introduction}
+The digital age has made health information readily available online, but this accessibility comes with significant risks, especially in Low and Middle-Income Countries (LMICs) like India. The proliferation of both accredited and potentially harmful non-accredited sources creates a dangerous information landscape for users seeking medical advice. SwasthyaSahayak addresses this challenge by providing a reliable, AI-driven platform that delivers accurate health information through WhatsApp, a widely used messaging app in India.
+
+\section{Background and Motivation}
+The need for SwasthyaSahayak stems from several critical issues faced by patients and the public when seeking health information online:
+
+\begin{itemize}
+    \item Information Overload: The vast amount of health content online overwhelms users with limited medical literacy.
+    \item Misinformation Risks: Exposure to inaccurate information can lead to poor health decisions and delayed treatment.
+    \item Language and Literacy Barriers: India's linguistic diversity complicates access to accurate health information.
+    \item Limited Healthcare Resources: Stretched healthcare systems push people towards online sources for immediate advice.
+    \item Technological Divide: Not all users can effectively navigate complex health websites or apps.
+    \item Lack of Contextualization: Generic online health information often fails to account for regional healthcare practices and cultural nuances.
+\end{itemize}
+
+These challenges underscore the urgent need for an innovative solution that bridges the gap between advanced technology and grassroots healthcare needs in LMICs.
+
+\section{Proposed Solution}
+SwasthyaSahayak combines several key components to address the challenges of health information dissemination:
+
+\begin{enumerate}
+    \item MedVidQA-India Dataset: A curated, open-source, multi-modal dataset of health information specific to the Indian context, initially focusing on post-operative care.
+    \item Speech-to-Text Conversion: Utilizes models like Whisper to transcribe user queries in native languages.
+    \item Retrieval Augmented Generation (RAG): Ensures accurate information retrieval from the curated corpus.
+    \item LLM-based Response Generation: Generates empathetic and accurate responses using advanced language models.
+    \item WhatsApp Integration: Enables widespread accessibility and distribution of health information.
+\end{enumerate}
+
+\section{Technical Implementation}
+The SwasthyaSahayak system processes user queries through the following steps:
+
+\begin{enumerate}
+    \item User input via text or voice notes in their local language.
+    \item Speech-to-text conversion for voice inputs.
+    \item Text chunking and embedding generation.
+    \item Vector database storage and retrieval of relevant information.
+    \item LLM-powered response generation.
+    \item Delivery of the response via WhatsApp.
+\end{enumerate}
+
+For video content, the system identifies specific time indexes containing relevant information, allowing for targeted playback of educational content.
+
+\section{Dataset Curation and Partnerships}
+The initial proof of concept focuses on post-operative care content in Hindi, Bengali, and English. SwasthyaSahayak has partnered with leading Indian healthcare institutions, including AIIMS Delhi, Manipal Hospital, and PGIMER Chandigarh, to curate high-quality content from:
+
+\begin{itemize}
+    \item Medical textbooks and patient discharge brochures
+    \item Publicly available videos and guidelines from accredited Indian healthcare providers
+\end{itemize}
+
+This collaboration ensures the accuracy and relevance of the information provided.
+
+\section{Advantages and Impact}
+SwasthyaSahayak offers several key benefits over traditional web searches:
+
+\begin{itemize}
+    \item Accuracy: RAG technology ensures trustworthy and precise information.
+    \item Accessibility: WhatsApp integration and multi-language support increase reach.
+    \item User-Friendliness: Voice interaction caters to users with varying literacy levels.
+    \item Efficiency: Provides faster access to reliable health information.
+\end{itemize}
+
+Pilot deployments are planned with clinical partners to refine the system and assess its real-world impact. If successful, SwasthyaSahayak has the potential to:
+
+\begin{itemize}
+    \item Significantly improve access to trustworthy health information at a national scale in India.
+    \item Serve as a model for similar systems in other LMICs.
+    \item Reduce the spread of misinformation and improve health outcomes.
+\end{itemize}
+
+\section{Responsible AI Practices}
+SwasthyaSahayak prioritizes responsible AI practices to ensure ethical and effective deployment:
+
+\begin{enumerate}
+    \item Data Curation and Bias Mitigation
+    \item Transparency and Explainability
+    \item Privacy and Data Protection
+    \item Accuracy and Reliability
+    \item Accessibility and Inclusivity
+    \item Human Oversight
+    \item Continuous Monitoring and Improvement
+    \item Ethical Use Promotion
+\end{enumerate}
+
+\section{Co-Design Approach}
+SwasthyaSahayak's development follows a responsible co-design approach, actively engaging clinicians, lay users, and patients throughout the process. This collaborative methodology ensures that the system addresses real-world healthcare needs while aligning with clinical best practices. The iterative feedback loops and user testing sessions continuously refine the solution to meet the nuanced requirements of India's diverse healthcare landscape.
+
+\section{Conclusion and Future Work}
+SwasthyaSahayak represents a transformative approach to public health information dissemination in India and potentially other LMICs. By leveraging AI technology, partnerships with healthcare institutions, and the widespread use of WhatsApp, the system aims to democratize access to credible, accurate, and trustworthy health information at a national scale.
+
+Future work will focus on expanding the language coverage, broadening the medical knowledge corpus, and refining the AI models based on user feedback and clinical outcomes. The success of SwasthyaSahayak could pave the way for similar initiatives in other healthcare domains and regions, ultimately contributing to improved global health outcomes.
+
+\section{References}
+\begin{thebibliography}{00}
+\bibitem{b1} G. Eason, B. Noble, and I. N. Sneddon, ``On certain integrals of Lipschitz-Hankel type involving products of Bessel functions,'' Phil. Trans. Roy. Soc. London, vol. A247, pp. 529--551, April 1955.
+\bibitem{b2} J. Clerk Maxwell, A Treatise on Electricity and Magnetism, 3rd ed., vol. 2. Oxford: Clarendon, 1892, pp.68--73.
+\bibitem{b3} I. S. Jacobs and C. P. Bean, ``Fine particles, thin films and exchange anisotropy,'' in Magnetism, vol. III, G. T. Rado and H. Suhl, Eds. New York: Academic, 1963, pp. 271--350.
+\bibitem{b4} K. Elissa, ``Title of paper if known,'' unpublished.
+\bibitem{b5} R. Nicole, ``Title of paper with only first word capitalized,'' J. Name Stand. Abbrev., in press.
+\bibitem{b6} Y. Yorozu, M. Hirano, K. Oka, and Y. Tagawa, ``Electron spectroscopy studies on magneto-optical media and plastic substrate interface,'' IEEE Transl. J. Magn. Japan, vol. 2, pp. 740--741, August 1987 [Digests 9th Annual Conf. Magnetics Japan, p. 301, 1982].
+\bibitem{b7} M. Young, The Technical Writer's Handbook. Mill Valley, CA: University Science, 1989.
+\end{thebibliography}
+
+\end{document}
